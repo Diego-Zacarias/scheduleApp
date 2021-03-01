@@ -46,14 +46,11 @@ const NewSchedules = () => {
   }
   
   const saveSchedules = () => {
-    axios
-      .post('http://localhost:3000/Schedules', form)
-      .then(setSuccess(true))
-    
+    setSuccess(true)
   }
 
   if(success){
-    return <Redirect to='/' />
+    return <Redirect to='/schedules' />
   }
 
   return (

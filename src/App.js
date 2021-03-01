@@ -1,5 +1,4 @@
 import React from 'react'
-import Home from './Home'
 import Header from './Header'
 import Schedules from './Schedules'
 import NewSchedules from './NewSchedules'
@@ -19,9 +18,8 @@ function App() {
         <Header />
         <div className='Content container-md shadow-sm p-3 mb-5 bg-body rounded'>
           <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/newSchedules' exact component={NewSchedules} />
-            <Route path='/Schedules' exact component={Schedules} />
+            <Route path='/' exact component={NewSchedules} />
+            <Route path='/schedules' exact component={Schedules} />
           </Switch>
         </div>
       </div>

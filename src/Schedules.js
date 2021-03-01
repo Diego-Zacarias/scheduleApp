@@ -7,10 +7,10 @@ const Schedules = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/Schedules')
+      .get('https://gist.githubusercontent.com/ZacaDev23/4634f491f746abe1662ead2afeb2430f/raw/004aa87e4a380772181f5b4a4b2c3c259e981ead/db.json')
       .then(res => {
         setData(res.data)
-        console.log(res.status)
+        console.log(res.data)
       })
       .catch((erro) => {
         console.log(erro)
@@ -43,7 +43,7 @@ const Schedules = () => {
           </tr>
         </thead>
         <tbody> 
-            {data.map(renderTable)}
+          {data.map(renderTable)}
         </tbody>
       </table>
     </div>

@@ -14,10 +14,10 @@ const Header = () => {
           <div className='d-flex flex-row-reverse' id='navbarNav'>
             <ul className='navbar-nav'>
               <li className='nav-item'>
-                <a className='nav-link active' aria-current='page' href='/newSchedules'>New Schedule</a>
+                <a className='nav-link active' aria-current='page' href='/'>New Schedule</a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link active' href='/Schedules'>Schedule</a>
+                <a className='nav-link active' href='/schedules'>Schedule</a>
               </li>
             </ul>
           </div>
