@@ -1,0 +1,11 @@
+{
+  "Schedules": [
+    {
+      "id": 1,
+      "speciality": "Cardiologist",
+      "doctor": "Jhon",
+      "Date": "20/02/2021 - 14:00",
+      "type": "Telemedicine"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "Schedules": [
+    {
+      "id": 1,
+      "specialty": "Cardiologist",
+      "doctor": "Jhon",
+      "date": "20/02/2021 - 14:00",
+      "type": "Telemedicine"
+    },
+    {
+      "id": 2,
+      "specialty": "Cardiologist",
+      "doctor": "Bob",
+      "date": "21/02/2021 - 14:00",
+      "type": "Telemedicine"
+    },
+    {
+      "id": 3,
+      "specialty": "qwer",
+      "doctor": "rewq",
+      "date": "",
+      "type": "In person"
+    },
+    {
+      "id": 4,
+      "specialty": "oisdfoij",
+      "doctor": "askdfj",
+      "date": "",
+      "type": "Telemedicine"
+    },
+    {
+      "id": 5,
+      "specialty": "qwer",
+      "doctor": "goweojf",
+      "date": "",
+      "type": "In person"
+    },
+    {
+      "id": 6,
+      "specialty": "boot",
+      "doctor": "gort",
+      "date": "",
+      "type": "In person"
+    },
+    {
+      "id": 7,
+      "specialty": "Geral",
+      "doctor": "Munrra",
+      "date": "",
+      "type": "In person"
+    },
+    {
+      "id": 8,
+      "specialty": "asdfhhe",
+      "doctor": "sdfglk;lk",
+      "date": "",
+      "type": "In person"
+    },
+    {
+      "id": 9,
+      "specialty": "oncologist",
+      "doctor": "greg",
+      "date": "",
+      "type": "In person"
+    },
+    {
+      "specialty": "asdfqwer",
+      "doctor": "asdfqer",
+      "date": "2021-02-24 - 17:58",
+      "type": "In person",
+      "id": 10
+    },
+    {
+      "specialty": "cardiologist",
+      "doctor": "McGayver",
+      "date": "2021-02-24 - 18:01",
+      "type": "Telemedicine",
+      "id": 11
+    },
+    {
+      "specialty": "asdf",
+      "doctor": "fdsa",
+      "date": "2021-02-08 - 18:00",
+      "type": "Telemedicine",
+      "id": 12
+    }
+  ]
+}
