@@ -4,6 +4,8 @@ import { Redirect } from 'react-router-dom'
 
 const NewSchedules = () => {
 
+  //Declaração dos useStates que controlam os dados do formulário
+
   const [date, setDate] = useState('')
   const [time, setTime] = useState('')
   const [form, setForm] = useState({
@@ -14,6 +16,12 @@ const NewSchedules = () => {
   });
   const [check, setCheck] = useState(false)
   const [success, setSuccess] = useState(false)
+
+  // as funções abaixos lidam com a recuperação dos dados do form e inserem na State form
+  // changeCheck -> altera o state que controla o campo check que terá o atributo checked.
+  // getSchedules -> insere no state form o value dos campos Specialty e Doctor.
+  // getDate e getTime -> insere no state form o value dos campos date e time chamando a função setDateForm.
+  // saveSchedules -> Função acionada ao precionar o button do formulário. destinada a dalsar os dados no banco de dados.
 
   const changeCheck = () => {
     setCheck(!check)

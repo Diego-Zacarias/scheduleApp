@@ -5,6 +5,8 @@ const Schedules = () => {
 
   const [data, setData] = useState([]);
 
+  //Aqui é realizada a conexão com a api  
+
   useEffect(() => {
     axios
       .get('https://gist.githubusercontent.com/ZacaDev23/4634f491f746abe1662ead2afeb2430f/raw/004aa87e4a380772181f5b4a4b2c3c259e981ead/db.json')
@@ -16,6 +18,8 @@ const Schedules = () => {
         console.log(erro)
       })
   },[])
+
+  //Esta funçao escreve os itens da tabela de schedules
 
   const renderTable = item =>{
     return(
