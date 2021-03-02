@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+//import axios from 'axios'
 import { Redirect } from 'react-router-dom'
+import SpecialtyInput from './SpecialtyInput'
+import DoctorInput from './DoctorInput'
 
 const NewSchedules = () => {
 
@@ -66,14 +68,8 @@ const NewSchedules = () => {
       New Schedules
       <div className='mx-auto w-50 mt-5 mb-5'>
         <form>
-          <div className='mb-3'>
-            <label htmlFor='inputSpecialty' className='form-label'>Specialty</label>
-            <input type='text' className='form-control' id='inputSpecialty' onChange={getSchedules('specialty')} />
-          </div>
-          <div className='mb-3'>
-            <label htmlFor='InputDoctor' className='form-label'>Doctor</label>
-            <input type='text' className='form-control' id='inputDoctor' onChange={getSchedules('doctor')} disabled={form.specialty === ''}/>
-          </div>
+          <SpecialtyInput />
+          <DoctorInput />
           <div className='mb-3'>
             <label htmlFor='inputDate' className='form-label'>Date and Time</label>
             <div className='row'>
