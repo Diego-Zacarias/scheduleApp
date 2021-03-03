@@ -14,14 +14,19 @@ const DoctorInput = () => {
 
   const listdoctor = item => {
     return (
-      <option key={item.doctorId} value={item.doctorId}>{item.doctor}</option>
+      <option key={item.doctorId} value={item.doctor}>{item.doctor}</option>
     )
+  }
+
+  const saveDoctor = () => evt => {
+    localStorage.setItem('schedule_app/selectDoctor', evt.target.value)
   }
 
   return (
     <div className='mb-3'>
       <label htmlFor='selectdoctor' className='form-label'>doctor</label>
-      <select className='form-select' aria-label='Select Doctor' id='selectdoctor'>
+      <select className='form-select' aria-label='Select Doctor' id='selectdoctor' onChange={saveDoctor()}>
+        <option value=''></option>
         {doctors.map(listdoctor)}
       </select>
     </div>

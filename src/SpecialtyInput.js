@@ -18,10 +18,15 @@ const SpecialtyInput = () => {
     )
   }
 
+  const saveSpecialty = () => evt => {
+    localStorage.setItem('schedule_app/selectSpecialty', evt.target.value)
+  }
+
   return (
     <div className='mb-3'>
       <label htmlFor='selectSpecialty' className='form-label'>Specialty</label>
-      <select className='form-select' aria-label='Default select example' id='selectSpecialty'>
+      <select className='form-select' aria-label='Default select example' id='selectSpecialty' onChange={saveSpecialty()}>
+        <option value=''></option>
         {specialties.map(listSpecialty)}
       </select>
     </div>
